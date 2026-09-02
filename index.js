@@ -409,7 +409,7 @@ function createBot() {
 
   // Register
   if (message.includes('register')) {
-    bot.chat('/register 882497 882497');
+    bot.chat('/login 882497');
     console.log('[Auth] Register detected');
   }
 
@@ -436,7 +436,7 @@ setupLeaveRejoin(bot, createBot);
 
 setTimeout(() => {
   if (bot && botState.connected) {
-    bot.chat('/register 882497 882497');
+    bot.chat('/login 882497');
   }
 }, 3000);
 
